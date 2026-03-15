@@ -216,10 +216,6 @@ async def receive_offense_details(update: Update, context: ContextTypes.DEFAULT_
     pdf.cell(200, 10, txt="Legal Notice / Draft Document", ln=True, align='C')
     pdf.ln(10)
     
-    pdf.set_font("Arial", size=12)
-    pdf.multi_cell(0, 10, txt="This document is generated based on user input for preliminary legal drafting.")
-    pdf.ln(5)
-    
     pdf.set_font("Arial", 'B', size=14)
     pdf.cell(200, 10, txt="Details", ln=True, align='L')
     pdf.ln(5)
