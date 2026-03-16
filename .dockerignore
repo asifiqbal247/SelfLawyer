@@ -1,0 +1,8 @@
+.venv
+__pycache__
+legal_db
+laws_pdf
+*.pdf
+.git
+*.txt
+!requirements.txt

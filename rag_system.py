@@ -4,7 +4,9 @@ import os
 from typing import List
 
 class LegalRAG:
-    def __init__(self, db_path: str = "./legal_db"):
+    def __init__(self, db_path: str = None):
+        if db_path is None:
+            db_path = os.getenv("CHROMA_DB_PATH", "./legal_db")
         self.client = chromadb.PersistentClient(path=db_path)
         # Using default sentence-transformers model for embeddings
         self.embedding_fn = embedding_functions.DefaultEmbeddingFunction()
