@@ -1,8 +1,12 @@
-legal_db
-.venv
-laws_pdf
-*.txt
-*.pdf
-__pycache__
-.git
-.env
+# Block All Strategy
+*
+
+# Whitelist source files
+!main.py
+!rag_system.py
+!templates.py
+!requirements.txt
+!Dockerfile
+
+# Whitelist potential directories (if needed in future, currently empty as per request)
+#!legal_db/
