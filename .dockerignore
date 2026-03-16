@@ -1,8 +1,8 @@
-.venv
-__pycache__
 legal_db
+.venv
 laws_pdf
-*.pdf
-.git
 *.txt
-!requirements.txt
+*.pdf
+__pycache__
+.git
+.env
